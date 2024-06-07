@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.Controller">
+    <children>
+        <Button fx:id="startSimulation" layoutX="448.0" layoutY="356.0" mnemonicParsing="false" onAction="#startSimulation" text="Start simulation" />
+        <Button fx:id="validate" layoutX="270.0" layoutY="356.0" mnemonicParsing="false" onAction="#onEvaluateClicked" text="Validate data" />
+        <Label layoutX="28.0" layoutY="62.0" text="Number of clients:" />
+        <Label layoutX="25.0" layoutY="105.0" text="Number of queues:" />
+        <Label layoutX="25.0" layoutY="153.0" text="Simulation time:" />
+        <Label layoutX="26.0" layoutY="192.0" text="Min arrival time:" />
+        <Label layoutX="25.0" layoutY="228.0" text="Max arrival time:" />
+        <Label layoutX="24.0" layoutY="276.0" text="Min service time:" />
+        <Label layoutX="23.0" layoutY="308.0" text="Max service time:" />
+        <Label layoutX="14.0" layoutY="14.0" text="Introduce the data:" />
+        <TextField fx:id="clientNr" layoutX="127.0" layoutY="57.0" prefHeight="26.0" prefWidth="82.0" />
+        <TextField fx:id="queueNr" layoutX="127.0" layoutY="100.0" prefHeight="26.0" prefWidth="82.0" />
+        <TextField fx:id="simulationTime" layoutX="113.0" layoutY="148.0" prefHeight="26.0" prefWidth="82.0" />
+        <TextField fx:id="minArrivalTime" layoutX="118.0" layoutY="187.0" prefHeight="26.0" prefWidth="72.0" />
+        <TextField fx:id="maxArrivalTime" layoutX="118.0" layoutY="223.0" prefHeight="26.0" prefWidth="72.0" />
+        <TextField fx:id="minServiceTime" layoutX="118.0" layoutY="271.0" prefHeight="26.0" prefWidth="72.0" />
+        <TextField fx:id="maxServiceTime" layoutX="118.0" layoutY="303.0" prefHeight="26.0" prefWidth="72.0" />
+        <TextArea fx:id="textArea" layoutX="232.0" layoutY="53.0" prefHeight="285.0" prefWidth="342.0" />
+      <Label layoutX="23.0" layoutY="338.0" text="Select Strategy:" />
+      <ChoiceBox fx:id="strategyChoiceBox" layoutX="79.0" layoutY="356.0" prefWidth="150.0" />
+    </children>
+</AnchorPane>
