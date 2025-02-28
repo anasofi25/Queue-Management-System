@@ -49,7 +49,6 @@ public class Queue implements Runnable{
         waitingTime.addAndGet(newClient.getServiceTime());
     }
     public synchronized void processClients() {
-
         if (!clients.isEmpty()) {
             Client client = clients.peek();
             if (client != null) {

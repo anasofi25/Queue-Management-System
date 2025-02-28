@@ -361,7 +361,7 @@ public class Simulation {
         }
         clients.removeAll(clientsToRemove);
     }
-    
+
     private void logEvent(String event) {
         Platform.runLater(() -> {
             if (event.matches(".*Time \\d+.*")) {
